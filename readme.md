@@ -10,11 +10,12 @@ This repository includes the initial setup for the evaluation. The project is [L
 
 Your job is to:
 
-1. Setup the environment by installing the composer dependancies and connecting it to a database and running the migrations.
-2. Change the code in `routes/web.php` to use Controllers, Requests, and Models.
-3. Produce a basic interface to list the tasks with the name, priority, and number of days until due. 
-4. Refactor the monstrous code in the `app/TaskFighter.php` class.
-5. Add a button on the interface to cause TaskFighter to 'tick'.
+1. Setup the environment by installing the composer dependancies and connecting it to a database.
+2. Run the database migrations and seeds.
+3. Change the code in `routes/web.php` to use Controllers, Requests, and Models. Think RESTful API.
+4. Produce a basic interface to list the tasks with the name, priority, and number of days until due. 
+5. Refactor the monstrous code in the `app/TaskFighter.php` class.
+6. Add a button on the interface to cause TaskFighter to 'tick'.
 
 Bonus point for (not required):
 
