@@ -19,8 +19,9 @@ Your job is to:
 
 Bonus point for (not required):
 
-1. Using VueJS to build the listing as a single page app.
-2. Ensuring robustness of the application for use in the wild.
+1. Implement unit tests for `app/TaskFighter.php` before refactoring the class and ensure they are passing throughout the refactor.
+2. Using VueJS to build the listing as a single page app.
+3. Ensuring robustness of the application for use in the wild.
 
 When finished (or for help), please email your contact person at Sendmarc.
 
