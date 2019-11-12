@@ -17,7 +17,7 @@ Your job is to:
 5. Refactor the monstrous code in the `app/TaskFighter.php` class.
 6. Add a button on the interface to cause TaskFighter to 'tick'.
 
-Bonus point for (not required):
+Bonus points for (not required):
 
 1. Implement unit tests for `app/TaskFighter.php` before refactoring the class and ensure they are passing throughout the refactor.
 2. Using VueJS to build the listing as a single page app.
