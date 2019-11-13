@@ -8,22 +8,27 @@ This evaluation is designed to test your coding skills. The project you will bui
 
 This repository includes the initial setup for the evaluation. The project is [Laravel](https://laravel.com/) based and is built using a fresh installation. Please refer to the Laravel documentation for help to setup the environment and get it running.
 
-Your job is to:
+Setup the environment by:
 
-1. Setup the environment by installing the composer dependancies and connecting it to a database.
-2. Run the database migrations and seeds.
-3. Change the code in `routes/web.php` to use Controllers, Requests, and Models. Think RESTful API.
-4. Produce a basic interface to list the tasks with the name, priority, and number of days until due. 
-5. Refactor the monstrous code in the `app/TaskFighter.php` class.
-6. Add a button on the interface to cause TaskFighter to 'tick'.
+1. Installing the composer and npm dependancies
+2. Connect it to a database.
+3. Run the database migrations and seeds.
 
-Bonus points for (not required):
+## Tasks
 
-1. Implement unit tests for `app/TaskFighter.php` before refactoring the class and ensure they are passing throughout the refactor.
-2. Using VueJS to build the listing as a single page app.
-3. Ensuring robustness of the application for use in the wild.
+Please complete the tasks below. It would be helpful for you to commit your work after each step. When finished create a pull request. Once the pull request is made (or for help), please email your contact person at Sendmarc.
 
-When finished (or for help), please email your contact person at Sendmarc.
+1. Change the code in `routes/web.php` to use Controllers, Requests, and Models. Think RESTful/Resourceful API architecture.
+2. Produce a basic interface to list the tasks with the name, priority, and number of days until due.
+3. Implement unit tests for `app/TaskFighter.php`.
+4. Refactor the monstrous code in the `app/TaskFighter.php` class.
+5. Add a button on the interface to cause TaskFighter to 'tick'.
+
+Bonus points are awarded for the following, optional, tasks:
+
+1. Using VueJS to build the listing as a single page app.
+3. Any additional usability features.
+2. Ensuring robustness of the application for use in the wild.
 
 ## Rules
 
