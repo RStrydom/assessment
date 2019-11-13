@@ -34,7 +34,7 @@ Bonus points are awarded for the following, optional, tasks:
 
 Hi and welcome to team TaskFighter. As you know, we build a small application to help people manage their tasks. 
 
-Unfortunately, our users' lists of tasks constantly growing and changing. Tasks increase in priority as they approach their due date. We have a system in place that updates the task lists for us. It was developed by a no-nonsense type named Leeroy, who has moved on to new adventures.
+Unfortunately, our users' lists of tasks are constantly growing and changing. Tasks increase in priority as they approach their due date. We have a system in place that updates the task lists for us. It was developed by a no-nonsense type named Leeroy, who has moved on to new adventures.
 
 First an introduction to our system:
 
