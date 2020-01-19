@@ -18,7 +18,8 @@ class CreateTasksTable extends Migration
             $table->text('name');
             $table->smallInteger('priority')->default(50);
             $table->smallInteger('dueIn')->default(10);
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 
