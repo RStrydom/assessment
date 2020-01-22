@@ -15,6 +15,11 @@ class Task extends Model
         'due_in',
     ];
 
+    protected $casts = [
+        'priority' => 'integer',
+        'due_in' => 'integer',
+    ];
+
     public function tick(): void
     {
         if ($this->name != 'Get Older') {
