@@ -1,27 +1,21 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App;
 
-class TaskFighter
+// Framework
+use Illuminate\Database\Eloquent\Model;
+
+class Task extends Model
 {
-    public $name;
+    protected $fillable = [
+        'name',
+        'priority',
+        'dueIn',
+    ];
 
-    public $priority;
-
-    public $dueIn;
-
-    public function __construct($name, $priority, $due_in)
-    {
-        $this->name = $name;
-        $this->priority = $priority;
-        $this->dueIn = $due_in;
-    }
-
-    public static function of($name, $priority, $dueIn) {
-        return new static($name, $priority, $dueIn);
-    }
-
-    public function tick()
+    public function tick(): void
     {
         if ($this->name != 'Get Older') {
             if ($this->priority < 100) {
