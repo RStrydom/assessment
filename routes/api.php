@@ -23,9 +23,9 @@ use Illuminate\Http\Response;
 Route::get('list/tick', function (Response $response) {
     $tasks = DB::table('tasks')->select('*')->get();
     foreach ($tasks as $task) {
-        $taskFighter = new \App\Task($task->name, $task->priority, $task->dueIn);
+        $taskFighter = new \App\Task($task->name, $task->priority, $task->due_in);
         $taskFighter->tick();
-        DB::update("update tasks set priority = '{$taskFighter->priority}', dueIn = '{$taskFighter->dueIn}' where id = '{$task->id}'");
+        DB::update("update tasks set priority = '{$taskFighter->priority}', due_in = '{$taskFighter->due_in}' where id = '{$task->id}'");
     }
 
     return $response->setStatusCode(204);

@@ -30,7 +30,7 @@ class TaskRequest extends FormRequest
         return [
             'name' => 'required|string|max:200',
             'priority' => 'required|integer|max:100|min:0',
-            'dueIn' => 'required|integer|min:0'
+            'due_in' => 'required|integer|min:0'
         ];
     }
 }

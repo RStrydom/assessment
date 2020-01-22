@@ -38,9 +38,9 @@ Unfortunately, our users' lists of tasks are constantly growing and changing. Ta
 
 First an introduction to our system:
 
-- All items have a dueIn value which denotes the number of days in which they have to be completed
+- All items have a due_in value which denotes the number of days in which they have to be completed
 - All items have a priority value which denotes how important the item is
-- At the end of each day our system lowers the dueIn value and increases the priority value for every item
+- At the end of each day our system lowers the due_in value and increases the priority value for every item
 
 Pretty simple, right? Well this is where it gets interesting:
 
@@ -49,6 +49,6 @@ Pretty simple, right? Well this is where it gets interesting:
 - "Get Older" actually decreases in priority the older it gets
 - The priority of an item is never more than 100
 - "Spin the World", being something that just happens, never has to be completed or increase in priority
-- "Complete Assessment", like "Get Older, increases in priority as it's dueIn value approaches; Priority increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but priority drops to 0 after the due date.
+- "Complete Assessment", like "Get Older, increases in priority as it's due_in value approaches; Priority increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but priority drops to 0 after the due date.
 
 Just for clarification, an item can never have its priority increase above 100 or below 0, however "Spin the World" is an automatic task and as such its priority is 1000 and it never alters.

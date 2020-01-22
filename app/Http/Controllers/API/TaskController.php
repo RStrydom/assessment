@@ -39,7 +39,7 @@ class TaskController extends Controller
     public function index(PagerRequest $request): JsonResource
     {
         $pageSize = $request->input('per_page', 10);
-        $tasks = Task::orderBy('dueIn')->paginate($pageSize);
+        $tasks = Task::orderBy('due_in')->paginate($pageSize);
 
         return TaskResource::collection($tasks);
     }
@@ -55,7 +55,7 @@ class TaskController extends Controller
         $input = $request->only([
             'name',
             'priority',
-            'dueIn'
+            'due_in'
         ]);
         $task = Task::create($input);
 
@@ -85,7 +85,7 @@ class TaskController extends Controller
         $input = $request->only([
             'name',
             'priority',
-            'dueIn'
+            'due_in'
         ]);
         $task->update($input);
 

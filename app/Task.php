@@ -12,7 +12,7 @@ class Task extends Model
     protected $fillable = [
         'name',
         'priority',
-        'dueIn',
+        'due_in',
     ];
 
     public function tick(): void
@@ -24,12 +24,12 @@ class Task extends Model
                 }
             }
             if ($this->name == 'Complete Assessment') {
-                if ($this->dueIn < 11) {
+                if ($this->due_in < 11) {
                     if ($this->priority < 100) {
                         $this->priority = $this->priority + 1;
                     }
                 }
-                if ($this->dueIn < 6) {
+                if ($this->due_in < 6) {
                     if ($this->priority < 100) {
                         $this->priority = $this->priority + 1;
                     }
@@ -41,9 +41,9 @@ class Task extends Model
             }
         }
         if ($this->name != 'Spin the World') {
-            $this->dueIn = $this->dueIn - 1;
+            $this->due_in = $this->due_in - 1;
         }
-        if ($this->dueIn < 0) {
+        if ($this->due_in < 0) {
             if ($this->name != 'Get Older') {
                 if ($this->name != 'Complete Assessment') {
                     if ($this->priority < 100) {
