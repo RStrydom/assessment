@@ -20,6 +20,8 @@ class Task extends Model
         'due_in' => 'integer',
     ];
 
+    protected $dates = ['created_at', 'deleted_at'];
+
     public function tick(): void
     {
         if ($this->name != 'Get Older') {
