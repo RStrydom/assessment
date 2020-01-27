@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Http\Controllers\API;
+namespace TaskFighter\Controllers;
 
 // App
-use App\Task;
+use App\Models\Task;
 use App\Http\Requests\TaskRequest;
 use App\Http\Resources\TaskResource;
 use App\Http\Requests\PagerRequest;
